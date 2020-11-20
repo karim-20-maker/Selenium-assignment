@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite thread-count="1" name="project" parallel="false">
+
+   <parameters name="browser" value="chrom"></parameters>
+	<test name="Test" preserve-order="true">
+	
+		<classes>
+			<class name="SDET.TERKWAZ.TestSearch" />
+			<class name="SDET.TERKWAZ.TestHeroKuapp" />
+			<class name="SDET.TERKWAZ.TestDynamicLoading" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="7" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-11-20T18:15:37 EET" name="project" finished-at="2020-11-20T18:16:11 EET" duration-ms="34297">
+    <groups>
+    </groups>
+    <test started-at="2020-11-20T18:15:37 EET" name="Test" finished-at="2020-11-20T18:16:11 EET" duration-ms="34297">
+      <class name="SDET.TERKWAZ.TestSearch">
+        <test-method is-config="true" signature="startDriver(java.lang.String)[pri:0, instance:SDET.TERKWAZ.TestSearch@124c278f]" started-at="2020-11-20T18:15:27 EET" name="startDriver" finished-at="2020-11-20T18:15:37 EET" duration-ms="9659" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method is-config="true" signature="navigate()[pri:0, instance:SDET.TERKWAZ.TestSearch@124c278f]" started-at="2020-11-20T18:15:37 EET" name="navigate" finished-at="2020-11-20T18:15:55 EET" duration-ms="17854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate -->
+        <test-method signature="SearchSelenium()[pri:0, instance:SDET.TERKWAZ.TestSearch@124c278f]" started-at="2020-11-20T18:15:55 EET" name="SearchSelenium" finished-at="2020-11-20T18:15:55 EET" duration-ms="47" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at SDET.TERKWAZ.TestSearch.SearchSelenium(TestSearch.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchSelenium -->
+        <test-method is-config="true" signature="ScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:SDET.TERKWAZ.TestSearch@124c278f]" started-at="2020-11-20T18:15:55 EET" name="ScreenShotOnFailure" finished-at="2020-11-20T18:15:56 EET" duration-ms="1108" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchSelenium status=FAILURE method=TestSearch.SearchSelenium()[pri:0, instance:SDET.TERKWAZ.TestSearch@124c278f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenShotOnFailure -->
+        <test-method is-config="true" signature="CloseDriver()[pri:0, instance:SDET.TERKWAZ.TestSearch@124c278f]" started-at="2020-11-20T18:16:11 EET" name="CloseDriver" finished-at="2020-11-20T18:16:12 EET" duration-ms="860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseDriver -->
+      </class> <!-- SDET.TERKWAZ.TestSearch -->
+      <class name="SDET.TERKWAZ.TestDynamicLoading">
+        <test-method is-config="true" signature="navigate()[pri:0, instance:SDET.TERKWAZ.TestDynamicLoading@77167fb7]" started-at="2020-11-20T18:16:04 EET" name="navigate" finished-at="2020-11-20T18:16:04 EET" duration-ms="345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate -->
+        <test-method signature="waiting()[pri:0, instance:SDET.TERKWAZ.TestDynamicLoading@77167fb7]" started-at="2020-11-20T18:16:04 EET" name="waiting" finished-at="2020-11-20T18:16:11 EET" duration-ms="6825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- waiting -->
+        <test-method is-config="true" signature="ScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:SDET.TERKWAZ.TestDynamicLoading@77167fb7]" started-at="2020-11-20T18:16:11 EET" name="ScreenShotOnFailure" finished-at="2020-11-20T18:16:11 EET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=waiting status=SUCCESS method=TestDynamicLoading.waiting()[pri:0, instance:SDET.TERKWAZ.TestDynamicLoading@77167fb7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenShotOnFailure -->
+      </class> <!-- SDET.TERKWAZ.TestDynamicLoading -->
+      <class name="SDET.TERKWAZ.TestHeroKuapp">
+        <test-method is-config="true" signature="navigate()[pri:0, instance:SDET.TERKWAZ.TestHeroKuapp@15b204a1]" started-at="2020-11-20T18:15:56 EET" name="navigate" finished-at="2020-11-20T18:16:00 EET" duration-ms="3474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigate -->
+        <test-method signature="UploadFileConfirmation()[pri:0, instance:SDET.TERKWAZ.TestHeroKuapp@15b204a1]" started-at="2020-11-20T18:16:00 EET" name="UploadFileConfirmation" finished-at="2020-11-20T18:16:04 EET" duration-ms="4546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadFileConfirmation -->
+        <test-method is-config="true" signature="ScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:SDET.TERKWAZ.TestHeroKuapp@15b204a1]" started-at="2020-11-20T18:16:04 EET" name="ScreenShotOnFailure" finished-at="2020-11-20T18:16:04 EET" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UploadFileConfirmation status=SUCCESS method=TestHeroKuapp.UploadFileConfirmation()[pri:0, instance:SDET.TERKWAZ.TestHeroKuapp@15b204a1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenShotOnFailure -->
+      </class> <!-- SDET.TERKWAZ.TestHeroKuapp -->
+    </test> <!-- Test -->
+  </suite> <!-- project -->
+</testng-results>
